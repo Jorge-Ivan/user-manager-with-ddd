@@ -23,10 +23,10 @@ Esta es una aplicación PHP desarrollada siguiendo los principios de **Domain-Dr
     ```sh
     make setup
     ```
-Este comando hará lo siguiente:
+    Este comando hará lo siguiente:
 
-- Levantar los servicios de PHP y MySQL.
-- Instalar las dependencias de Composer.
+    - Levantar los servicios de PHP y MySQL.
+    - Instalar las dependencias de Composer.
 
 3. Acceder al Contenedor de PHP
 
@@ -48,7 +48,20 @@ Este comando hará lo siguiente:
 
 6. Acceder a la Aplicación
 
-La aplicación estará disponible en **http://localhost:9000** (si el contenedor se compilo y ejecuto correctamente).
+    La aplicación estará disponible en **http://localhost:9000** (si el contenedor se compilo y ejecuto correctamente).
+
+    - **Registro de usuarios**
+
+        ```POST /api/register```
+
+        Body ```application/json```:
+        ```json copy
+        {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "password": "Str0ngP@ss!"
+        }
+    ```
 
 7. Apagar contenedor
 
