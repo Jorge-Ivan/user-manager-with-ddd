@@ -61,7 +61,7 @@ Esta es una aplicación PHP desarrollada siguiendo los principios de **Domain-Dr
             "email": "john@example.com",
             "password": "Str0ngP@ss!"
         }
-    ```
+        ```
 
 7. Apagar contenedor
 
