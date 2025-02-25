@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mysql://user:password@db:3306/user_registration
+    ports:
+      - "9000:9000"
+
+  db:
+    image: mysql:8.0
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=user_registration
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_TCP_PORT=3306
+    ports:
+      - "3307:3306"
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+volumes:
+  db_data:

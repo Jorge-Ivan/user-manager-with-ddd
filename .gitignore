@@ -1,0 +1,55 @@
+# Dependencias de Composer
+/vendor/
+composer.lock
+
+# Archivos de entorno y configuraciones sensibles
+.env
+.env.*.local
+.phpunit.result.cache
+
+# Caché y logs de Laravel
+/storage/
+bootstrap/cache/
+
+# Caché de Doctrine
+/var/cache/doctrine/
+
+# Archivos de bases de datos locales
+Homestead.yaml
+Homestead.json
+.vagrant/
+*.sqlite
+*.sqlite3
+
+# Archivos generados
+/node_modules/
+npm-debug.log
+yarn-error.log
+public/hot
+public/storage
+storage/oauth-private.key
+storage/oauth-public.key
+
+# Logs
+*.log
+logs/
+storage/logs/
+*.out
+
+# Configuración del IDE
+.idea/
+.vscode/
+*.iml
+
+# Cobertura de pruebas
+coverage/
+.phpunit.result.cache
+/.phpunit.cache/
+
+# Docker
+docker-compose.override.yml
+/.docker/
+
+# Otros
+.DS_Store
+Thumbs.db

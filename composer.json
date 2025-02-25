@@ -1,0 +1,36 @@
+{
+    "name": "app/user-manager",
+    "description": "DDD User Registration application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge Carrillo",
+            "email": "carrillo14020@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UserManager\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "doctrine/orm": "^2.14",
+        "doctrine/dbal": "^3.5",
+        "doctrine/annotations": "^2.0",
+        "ramsey/uuid": "^4.7",
+        "symfony/cache": "^6.2",
+        "symfony/dotenv": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    }
+}
