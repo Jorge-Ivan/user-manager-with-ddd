@@ -50,7 +50,7 @@ Este comando hará lo siguiente:
 
 La aplicación estará disponible en **http://localhost:9000** (si el contenedor se compilo y ejecuto correctamente).
 
-7. Apagadar contenedor
+7. Apagar contenedor
 
     ```sh
     make down
@@ -61,11 +61,6 @@ El archivo ```docker-compose.yml``` define dos servicios:
 
 1. php: Contenedor con PHP, Composer y Doctrine.
 2. mysql: Contenedor con MySQL en el puerto (3307) y adminer para gestionar la base de datos en **http://localhost:8080**.
-
-**Variables de Entorno**
-- MySQL:
-    - ```MYSQL_ROOT_PASSWORD: root```
-    - ```MYSQL_DATABASE: app_db```
 
 ## Dependencias
 Las dependencias principales incluyen:
